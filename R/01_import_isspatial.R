@@ -25,7 +25,7 @@ library(tidyr)
 # ------------------------------------------------------
 # read
 
-tsv = "D:/Projects/TRY_exploration/data/request/13377.txt"
+tsv = "D:/Projects/TRY/data/request/13377.txt"
 readin = read_tsv(tsv)
 
 dt = setDT(readin)
@@ -40,8 +40,6 @@ names(dt)
 #' DataID 59 = Latitude, DataID 60 = Longitude
 #' DataID 61 = Altitude
 #' DataID 6601 = measurement date
-
-dt[DataID == 59 | DataID == 60]
 
 # ------------------------------------------------------
 # Querying a single dataset to check accessablilty
@@ -81,20 +79,10 @@ nchar(sub(".", "", char, fixed=TRUE))
 vec = ds1.subset[DataID == 59 | DataID == 60, StdValue]
 vec[1] = NA_real_
 
-# TODO: Make precision function detecting periods (recurring real number endings)
+# TODO: Make precision function detecting periods (recurring real number endings), there are still datasets not working
+# weill
 
 # get numeric precision (stringr)
-str_precision = function(numvec){
-    #' vectorise with purrr
-    vec = map_dbl(numvec, function(numeric){
-        #cat(numeric)
-        char = as.character(abs(numeric))
-        split = str_split_fixed(char, pattern = "\\.", n = 2)[2]
-        #cat(split)
-        return(str_length(split))
-    })
-    return(vec)
-}
 
 # test if working
 str_precision(151.11333)
@@ -107,7 +95,7 @@ str_precision(vec)
 str_precision(NA)
 
 # implement in data.table structure
-ds1.subset[DataID == 59 | DataID == 60, .(str_precision(StdValue), DataID, StdValue), by = ObservationID]
+ds1.subset[DataID == 59 | DataID == 60, .(precision = str_precision(StdValue), DataID, StdValue), by = ObservationID]
 
 # ----------------------------------------------------
 #' 1. Querying if spatial index is existing, than only choose those more precise than 3 digits lat & lon with feature of spatial precision
@@ -153,23 +141,7 @@ nrow(dt) - nrow(dt.spatial)
 
 # 23 -> 8 mio. data rows
 
-# -------------------------------------------------------
-# QUERYING BY SPATIAL INDEX USING GEOGRAPHIC AREAS
+# save indexed dataset
+saveRDS(dt.spatial, file = "./data/develop/dt_spatial.RDS")
 
-# in lat lon
-library(osmdata)
-bb1 = getbb("Thuringia")
-bb2 = getbb("Amazon")
-bb3.in = st_read("D:/Projects/TRY_exploration/data/ancillary/Boundaries.gpkg") %>% st_bbox()
 
-bb3.early = as.matrix(bb3.in)
-bb3 = rbind(bb3.early[1:2,1], bb3.early[3:4,1]) %>% t()
-rownames(bb3) = c("x", "y")
-colnames(bb3) = c("min", "max")
-
-bboxes = list(bb1, bb2, bb3)
-names(bboxes) = c("Thuringia", "Amazon", "SouthAfrica")
-
-#TODO: Write wrapper function with query by the spatial indizes
-
-# (end)

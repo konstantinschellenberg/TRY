@@ -1,12 +1,108 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="0a2ea1f1-e96b-4090-a2ae-75a80efd1e8a" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/R/02_spatial_querying.R" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/R/_constants.R" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/R/_wrapper_functions.R" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/rGraphicsSettings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/rGraphicsSettings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/R/import_database.R" beforeDir="false" afterPath="$PROJECT_DIR$/R/01_import_isspatial.R" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="R Script" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="JupyterTrust" id="e199918f-a9ee-48cc-8bf3-7615cbf6f7eb" />
+  <component name="ProjectId" id="1nTNzTQKjk3fcq9omyVj0piDKP2" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
-    <option name="showExcludedFiles" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
-    <property name="last_opened_file_path" value="D:/Geodaten/Master/projects" />
-    <property name="settings.editor.selected.configurable" value="configurable.group.editor" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/R" />
+    <property name="settings.editor.selected.configurable" value="file.status.colors" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Projects\TRY\R" />
+    </key>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="0a2ea1f1-e96b-4090-a2ae-75a80efd1e8a" name="Default Changelist" comment="" />
+      <created>1611410383190</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1611410383190</updated>
+      <workItem from="1611410385366" duration="271000" />
+      <workItem from="1611421769070" duration="18443000" />
+    </task>
+    <task id="LOCAL-00001" summary="init2">
+      <created>1611410604116</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1611410604116</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="init2" />
+    <option name="LAST_COMMIT_MESSAGE" value="init2" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="2505" y="116" key="CommitChangelistDialog2" timestamp="1611410603455">
+      <screen x="1920" y="0" width="1920" height="1040" />
+    </state>
+    <state x="2505" y="116" key="CommitChangelistDialog2/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1611410603455" />
+    <state x="2758" y="418" key="Github.ShareDialog" timestamp="1611410490213">
+      <screen x="1920" y="0" width="1920" height="1040" />
+    </state>
+    <state x="2758" y="418" key="Github.ShareDialog/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1611410490213" />
+    <state x="2744" y="225" key="Github.UntrackedFilesDialog" timestamp="1611410507555">
+      <screen x="1920" y="0" width="1920" height="1040" />
+    </state>
+    <state x="2744" y="225" key="Github.UntrackedFilesDialog/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1611410507555" />
+    <state x="2330" y="38" key="SettingsEditor" timestamp="1611410554872">
+      <screen x="1920" y="0" width="1920" height="1040" />
+    </state>
+    <state x="2330" y="38" key="SettingsEditor/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1611410554872" />
+    <state x="2472" y="253" key="Vcs.Push.Dialog.v2" timestamp="1611410605603">
+      <screen x="1920" y="0" width="1920" height="1040" />
+    </state>
+    <state x="2472" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1611410605603" />
+    <state width="1449" height="524" key="XDebugger.FullValuePopup" timestamp="1611427644118">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1449" height="524" key="XDebugger.FullValuePopup/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1611427644118" />
+    <state width="673" height="163" key="javadoc.popup.new" timestamp="1611440343062">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="673" height="163" key="javadoc.popup.new/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1611440343062" />
+    <state x="1305" y="232" width="672" height="678" key="search.everywhere.popup" timestamp="1611431040301">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="1305" y="232" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1611431040301" />
   </component>
 </project>
